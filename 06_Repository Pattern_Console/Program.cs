@@ -10,6 +10,8 @@ namespace _06_Repository_Pattern_Console
     {
         static void Main(string[] args)
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }

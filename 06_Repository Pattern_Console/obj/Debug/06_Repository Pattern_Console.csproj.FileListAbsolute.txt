@@ -1,0 +1,7 @@
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\bin\Debug\06_Repository Pattern_Console.exe.config
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\bin\Debug\06_Repository Pattern_Console.exe
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\bin\Debug\06_Repository Pattern_Console.pdb
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.csprojAssemblyReference.cache
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.exe
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.pdb
