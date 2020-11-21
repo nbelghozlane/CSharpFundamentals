@@ -5,3 +5,6 @@ C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_
 C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.csproj.CoreCompileInputs.cache
 C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.exe
 C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.pdb
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\bin\Debug\06_RepositoryPattern_Repository.dll
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\bin\Debug\06_RepositoryPattern_Repository.pdb
+C:\ElevenFifty Projects\DotNetProjects\CSharpFundamentals\06_Repository Pattern_Console\obj\Debug\06_Repository Pattern_Console.csproj.CopyComplete
