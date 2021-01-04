@@ -8,12 +8,13 @@ namespace _06_RepositoryPattern_Repository
 {
     public class StreamingContentRepository
     {
-        private List<StreamingContent> _listOfContent = new List<StreamingContent>();
+        private List<StreamingContent> _listOfContent = new List<StreamingContent>(); //<--- _listOfContent is a field
        
+        //CRUD: Create, Read, Update, Delete
         //Create
         public void AddContentToList(StreamingContent content)
         {
-            _listOfContent.Add(content);   // <-- field is _ camel case  ; properties is pascal case
+            _listOfContent.Add(content);   // <-- field is _ camel case  ; properties is pascal case (example: ListOfContent)
         }
 
         //Read
@@ -69,9 +70,7 @@ namespace _06_RepositoryPattern_Repository
             }
         }
 
-
-
-        //Helper method
+        //Helper method (or ReadByTitle or GetByTitle) - helps other methods
         public StreamingContent GetContentByTitle(string title)
         {
             foreach(StreamingContent content in _listOfContent)
@@ -82,7 +81,7 @@ namespace _06_RepositoryPattern_Repository
                 }
             }
 
-            return null;
+            return null;   // if I don't find that object, return null
         }
     }
 }

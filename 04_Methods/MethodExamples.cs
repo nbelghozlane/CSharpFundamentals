@@ -66,5 +66,6 @@ namespace _04_Methods
             int remainder = FindRemainder(10, 4);
             Assert.AreEqual(2, remainder);
         }
+     
     }
 }

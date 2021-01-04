@@ -47,21 +47,21 @@ namespace _01_Types
             Console.WriteLine("Hello");
         }
 
-            [TestMethod]
-            public void ReferenceTypes()
-            {
-                //-- Strings
-                string stringExample = "This is a string.";
-                string name = "Nadia";
+        [TestMethod]
+        public void ReferenceTypes()
+        {
+            //-- Strings
+            string stringExample = "This is a string.";
+            string name = "Nadia";
 
-                string declared;
-                declared = "Now it's initialized.";
+            string declared;
+            declared = "Now it's initialized.";
 
-                // Formatting strings
-                string concatenate = stringExample + " " + name; //This is a string. Nadia
-                string interpolate = $"{name}. Here is the string: {stringExample}"; //Nadia. Here is the string: This is a string.
-                Console.WriteLine(concatenate);
-                Console.WriteLine(interpolate);
+            // Formatting strings
+            string concatenate = stringExample + " " + name; //This is a string. Nadia
+            string interpolate = $"{name}. Here is the string: {stringExample}"; //Nadia. Here is the string: This is a string.
+            Console.WriteLine(concatenate);
+            Console.WriteLine(interpolate);
 
             //-- Other Object Examples
             DateTime now = DateTime.Now;
@@ -75,7 +75,7 @@ namespace _01_Types
             //--Collections
             // Arrays
             string anotherExampleString = "Hello World";
-            string[] stringArray = {anotherExampleString, "Hello", "World", "!" };
+            string[] stringArray = { anotherExampleString, "Hello", "World", "!" };
             string[] students = new string[15];
 
             Console.WriteLine(stringArray);
@@ -95,7 +95,8 @@ namespace _01_Types
 
             //Other Collections
             Stack<string> firstInLastOut = new Stack<string>();
-        }
             SortedList<int, string> sortedKeyValuePair = new SortedList<int, string>();
+        }
     }
+       
 }

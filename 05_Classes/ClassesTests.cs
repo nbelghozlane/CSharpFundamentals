@@ -29,7 +29,7 @@ namespace _05_Classes
 
             Vehicle newCar = new Vehicle
             {                                       //used curly braces instead of ()
-                TypeOfVehicle = VehicleType.Car, 
+                TypeOfVehicle = VehicleType.Car,
                 Make = "Honda",
                 Model = "Civic"
             };

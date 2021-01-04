@@ -61,9 +61,9 @@ namespace _06_Repository_Pattern_Console
                         break;
                     case "6":
                         Console.WriteLine("Goodbye!");
-                        keepRunning = false;
+                        keepRunning = false;               // <== breaks while loop so that console closes out
                         break;
-                    default:
+                    default:                                                    //default- For when someone puts in an invalid response
                         Console.WriteLine("Please enter a valid number.");
                         break;
                 }
@@ -75,7 +75,7 @@ namespace _06_Repository_Pattern_Console
         }
 
         //Create new Streaming Content
-        private void CreateNewContent()
+        private void CreateNewContent()   //These are void because we want them to do something but not actually return anything to the menu
         {
             Console.Clear();
             StreamingContent newContent = new StreamingContent();
@@ -101,7 +101,7 @@ namespace _06_Repository_Pattern_Console
             Console.WriteLine("Is this content family friendly? (y/n)");
             string familyFriendlyString = Console.ReadLine().ToLower();  //.ToLower means that if user inputs an uppercase letter (Y/N), it wil automatically be converted to lowercase.
 
-            if(familyFriendlyString == "y")
+            if (familyFriendlyString == "y")
             {
                 newContent.IsFamilyFriendly = true;
             }
@@ -136,13 +136,14 @@ namespace _06_Repository_Pattern_Console
             Console.Clear();
 
             List<StreamingContent> listOfContent = _contentRepo.GetContentList();
-            
-            foreach(StreamingContent content in listOfContent)
+
+            foreach (StreamingContent content in listOfContent)
             {
                 Console.WriteLine($"Title: {content.Title}\n" +
                     $"Description: {content.Description}");
             }
         }
+
 
         //View existing Content by title
         private void DisplayContentByTitle()
@@ -155,10 +156,10 @@ namespace _06_Repository_Pattern_Console
             string title = Console.ReadLine();
 
             //Find the content by that title
-            StreamingContent content =_contentRepo.GetContentByTitle(title);
-            
+            StreamingContent content = _contentRepo.GetContentByTitle(title);
+
             //Display said content if it isn't null
-            if(content != null)
+            if (content != null)
             {
                 Console.WriteLine($"Title: {content.Title}\n" +
                     $"Description: {content.Description}\n" +
@@ -234,6 +235,7 @@ namespace _06_Repository_Pattern_Console
             string genreAsString = Console.ReadLine();
             int genreAsInt = int.Parse(genreAsString);   // .Parse took string and converted it into an integer (number)
             newContent.TypeOfGenre = (GenreType)genreAsInt;
+            //_contentRepo.AddContentToList(newContent);    <-- call out add method in our repository to add our new content to our directory  <-- casey's notes
 
             //Verify the update worked
             bool wasUpdated = _contentRepo.UpdateExistingContent(oldTitle, newContent);
@@ -261,7 +263,7 @@ namespace _06_Repository_Pattern_Console
             string input = Console.ReadLine();
 
             //Call the delete method
-            bool wasDeleted= _contentRepo.RemoveContentFromList(input);
+            bool wasDeleted = _contentRepo.RemoveContentFromList(input);
 
             //If the content was deleted, say so
             //Otherwise state it could not be deleted
@@ -288,4 +290,13 @@ namespace _06_Repository_Pattern_Console
             _contentRepo.AddContentToList(rubber);
         }
     }
+    
 }
+
+       
+    
+
+
+
+// Make sure you have the right project selected before hitting run - Right click on project, click Set As Startup Project.
+//Control K D to align curly braces
